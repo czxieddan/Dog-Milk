@@ -1,0 +1,4 @@
+# Wild Dog Milk asset manifest: identifier | mod-relative path | use
+dog_milk_search | gfx/interface/illustrations/decisions/dog_milk_search.dds | Search decision illustration
+dog_milk_drink | gfx/interface/illustrations/decisions/dog_milk_drink.dds | Open-bottle decision illustration
+dog_milk_timeless | gfx/interface/icons/traits/dog_milk_timeless.dds | Immortality trait icon
