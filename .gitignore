@@ -1,0 +1,17 @@
+# Local workspace rules, notes and checks
+.codex/
+
+# Local launcher descriptors and runtime output
+*.local.mod
+*.log
+*.dmp
+*.tmp
+
+# Editor and OS files
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
