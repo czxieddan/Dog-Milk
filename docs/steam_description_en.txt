@@ -1,0 +1,17 @@
+[h1]Wild Dog Milk | 野生狗奶[/h1]
+
+[i]Humanity fears time, and time fears Wild Dog Milk.[/i]
+
+The elders in the hills say the local wild dogs have outlived their grandfathers. Those who drink their milk are said never to grow another grey hair. You have heard plenty of such tales, but this time the people you sent have returned with a clay bottle.
+
+You could lock it away, sell it to someone who believes the stories, or pour yourself a cup and see what all the fuss is about.
+
+[b]Wild Dog Milk[/b] is a small, absurd [b]Crusader Kings III[/b] mod inspired by a Chinese internet meme. Follow a short event chain from a search in the hills to strange happenings at court, as a ruler who may have other plans than growing old.
+
+[h2]Getting Started[/h2]
+
+Enable the mod, play an adult landed character, and take the [b]Seek Wild Dog Milk[/b] decision.
+
+[h2]Help Improve the Mod[/h2]
+
+Report bugs, share suggestions, or contribute through the [url=https://github.com/czxieddan/Dog-Milk]GitHub repository[/url].
