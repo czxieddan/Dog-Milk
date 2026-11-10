@@ -1,0 +1,22 @@
+dog_milk_timeless = {
+	category = fame
+	icon = "dog_milk_timeless.dds"
+	shown_in_ruler_designer = no
+	birth = 0
+	random_creation = 0
+	inherit_chance = 0
+	opposites = { incapable }
+
+	immortal = yes
+	no_prowess_loss_from_age = yes
+	flag = is_immortal
+	flag = immortal_visuals
+	flag = immortal_fertility
+	flag = immortal_incapability
+
+	health = 5
+	prowess = 12
+	learning = 5
+	stress_gain_mult = -0.5
+	monthly_prestige = 2
+}

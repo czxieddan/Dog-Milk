@@ -1,0 +1,64 @@
+namespace = dog_milk
+
+dog_milk.0010 = {
+	type = character_event
+	title = dog_milk.0010.t
+	desc = dog_milk.0010.desc
+	theme = learning
+	override_background = { reference = study }
+	left_portrait = root
+
+	trigger = {
+		is_alive = yes
+		has_character_flag = dog_milk_searching
+	}
+	immediate = { remove_character_flag = dog_milk_searching }
+
+	option = {
+		name = dog_milk.0010.a
+		trigger = { dog_milk_can_act_trigger = yes }
+		dog_milk_give_bottle_effect = yes
+		hidden_effect = { trigger_event = dog_milk.0020 }
+	}
+	option = {
+		name = dog_milk.0010.b
+		dog_milk_give_bottle_effect = yes
+	}
+	option = {
+		name = dog_milk.0010.c
+		add_gold = 120
+		add_stress = -15
+	}
+}
+
+dog_milk.0020 = {
+	type = character_event
+	title = dog_milk.0020.t
+	desc = dog_milk.0020.desc
+	theme = learning
+	override_background = { reference = study }
+	left_portrait = root
+
+	trigger = { dog_milk_can_open_bottle_trigger = yes }
+	immediate = {
+		# Reserve the bottle as soon as the event opens, before any option is picked.
+		remove_character_modifier = dog_milk_bottle_modifier
+		add_character_flag = { flag = dog_milk_chain_active days = 365 }
+	}
+
+	option = {
+		name = dog_milk.0020.a
+		dog_milk_raw_drink_effect = yes
+		hidden_effect = { dog_milk_begin_omen_effect = yes }
+	}
+	option = {
+		name = dog_milk.0020.b
+		dog_milk_boiled_drink_effect = yes
+		hidden_effect = { dog_milk_begin_omen_effect = yes }
+	}
+	option = {
+		name = dog_milk.0020.c
+		dog_milk_give_bottle_effect = yes
+		hidden_effect = { dog_milk_close_chain_effect = yes }
+	}
+}

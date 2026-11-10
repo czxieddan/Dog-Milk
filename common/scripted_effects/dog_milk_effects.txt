@@ -1,0 +1,81 @@
+dog_milk_begin_search_effect = {
+	# Expiry leaves a way back if a delayed event is cancelled by other content.
+	add_character_flag = { flag = dog_milk_searching days = 90 }
+	trigger_event = { id = dog_milk.0010 days = 20 }
+}
+
+dog_milk_give_bottle_effect = {
+	add_character_modifier = { modifier = dog_milk_bottle_modifier }
+}
+
+dog_milk_begin_omen_effect = {
+	add_character_flag = { flag = dog_milk_waiting_for_omen days = 30 }
+	trigger_event = { id = dog_milk.0030 days = 7 }
+}
+
+dog_milk_raw_drink_effect = {
+	add_stress = -60
+	random_list = {
+		75 = {
+			add_character_modifier = {
+				modifier = dog_milk_raw_power_modifier
+				years = 1
+			}
+		}
+		25 = {
+			add_character_modifier = {
+				modifier = dog_milk_rebellious_stomach_modifier
+				months = 3
+			}
+		}
+	}
+}
+
+dog_milk_boiled_drink_effect = {
+	add_stress = -30
+	add_character_modifier = {
+		modifier = dog_milk_warm_belly_modifier
+		years = 1
+	}
+}
+
+dog_milk_summon_time_effect = {
+	add_character_flag = { flag = dog_milk_waiting_for_time days = 90 }
+	trigger_event = { id = dog_milk.0040 days = 30 }
+}
+
+dog_milk_become_timeless_effect = {
+	remove_trait = incapable
+	add_trait = dog_milk_timeless
+	set_immortal_age = 30
+	add_prestige = 500
+	add_dread = 35
+}
+
+dog_milk_begin_epilogue_effect = {
+	add_character_flag = { flag = dog_milk_waiting_for_epilogue days = 270 }
+	trigger_event = { id = dog_milk.0050 days = 180 }
+}
+
+dog_milk_rent_to_time_effect = {
+	add_gold = 500
+	add_character_modifier = {
+		modifier = dog_milk_time_rent_modifier
+		years = 10
+	}
+}
+
+dog_milk_take_ten_years_effect = {
+	add_prestige = 250
+	add_character_modifier = {
+		modifier = dog_milk_ten_good_years_modifier
+		years = 10
+	}
+}
+
+dog_milk_close_chain_effect = {
+	remove_character_flag = dog_milk_chain_active
+	remove_character_flag = dog_milk_waiting_for_omen
+	remove_character_flag = dog_milk_waiting_for_time
+	remove_character_flag = dog_milk_waiting_for_epilogue
+}

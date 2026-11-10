@@ -1,0 +1,47 @@
+dog_milk_search_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/dog_milk_search.dds"
+	}
+	desc = dog_milk_search_decision_desc
+	selection_tooltip = dog_milk_search_decision_tooltip
+	ai_check_interval = 0
+	cooldown = { years = 3 }
+
+	is_shown = {
+		is_ai = no
+		is_adult = yes
+		is_landed = yes
+		dog_milk_search_ready_trigger = yes
+	}
+	is_valid_showing_failures_only = {
+		dog_milk_can_search_trigger = yes
+	}
+	cost = { gold = 50 }
+	effect = {
+		hidden_effect = { dog_milk_begin_search_effect = yes }
+	}
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+}
+
+dog_milk_open_bottle_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/dog_milk_drink.dds"
+	}
+	desc = dog_milk_open_bottle_decision_desc
+	selection_tooltip = dog_milk_open_bottle_decision_tooltip
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ai = no
+		dog_milk_bottle_ready_trigger = yes
+	}
+	is_valid_showing_failures_only = {
+		dog_milk_can_open_bottle_trigger = yes
+	}
+	effect = {
+		hidden_effect = { trigger_event = dog_milk.0020 }
+	}
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+}

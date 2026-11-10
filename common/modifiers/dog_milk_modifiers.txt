@@ -1,0 +1,41 @@
+dog_milk_bottle_modifier = {
+	icon = health_positive
+}
+
+dog_milk_raw_power_modifier = {
+	icon = health_positive
+	health = 3
+	prowess = 8
+	stress_gain_mult = -0.25
+}
+
+dog_milk_rebellious_stomach_modifier = {
+	icon = health_negative
+	health = -0.5
+	prowess = -2
+}
+
+dog_milk_warm_belly_modifier = {
+	icon = health_positive
+	health = 1
+	stress_gain_mult = -0.15
+}
+
+dog_milk_time_rent_modifier = {
+	icon = stewardship_positive
+	monthly_income = 2
+}
+
+dog_milk_ten_good_years_modifier = {
+	icon = health_positive
+	health = 3
+	prowess = 6
+	fertility = 0.25
+}
+
+dog_milk_back_on_clock_modifier = {
+	icon = health_positive
+	health = 2
+	learning = 2
+	diplomacy = 2
+}

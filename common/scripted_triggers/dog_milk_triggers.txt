@@ -1,0 +1,31 @@
+dog_milk_can_act_trigger = {
+	is_alive = yes
+	is_adult = yes
+	is_landed = yes
+	is_imprisoned = no
+	NOT = { has_trait = incapable }
+}
+
+dog_milk_search_ready_trigger = {
+	NOR = {
+		has_character_flag = dog_milk_searching
+		has_character_flag = dog_milk_chain_active
+		has_character_modifier = dog_milk_bottle_modifier
+		has_trait = dog_milk_timeless
+	}
+}
+
+dog_milk_bottle_ready_trigger = {
+	has_character_modifier = dog_milk_bottle_modifier
+	NOT = { has_character_flag = dog_milk_chain_active }
+}
+
+dog_milk_can_search_trigger = {
+	dog_milk_can_act_trigger = yes
+	dog_milk_search_ready_trigger = yes
+}
+
+dog_milk_can_open_bottle_trigger = {
+	dog_milk_can_act_trigger = yes
+	dog_milk_bottle_ready_trigger = yes
+}
